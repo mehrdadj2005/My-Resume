@@ -1,0 +1,728 @@
+/* General Style */
+body {
+    margin: 0px;
+}
+
+a,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p {
+    color: #969696;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+
+/* header..................................................................... style */
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+header nav>ul>li {
+    display: inline-block;
+    padding: 0 10px;
+
+}
+
+.cantainer-header {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    padding: 15px;
+}
+
+header nav li:hover>a {
+    color: #8490ff;
+
+}
+
+
+header nav>ul>li {
+    position: relative;
+
+
+}
+
+header nav>ul>li:hover>ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+
+
+}
+
+header nav>ul>li>ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 20px;
+    /* background-color: rgb(0, 0, 255); */
+    background-color: white;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0.3s;
+
+}
+
+
+header nav>ul>li>ul>li>a {
+    padding: 15px 50px 15px 10px;
+    display: inline-block;
+    width: 100px;
+}
+
+header nav>ul>li>ul>li>ul {
+    box-shadow: 0px 5px 20px #707070;
+    display: none;
+}
+
+
+header nav>ul>li>ul>li:hover>ul {
+    display: block;
+    position: absolute;
+    right: 100%;
+    top: 70%;
+    background-color: white;
+    /* background-color: blue; */
+
+
+
+}
+
+header nav>ul>li>ul>li>ul>li>a {
+    padding: 15px 50px 15px 10px;
+    display: inline-block;
+    width: 100px;
+}
+
+/*   
+ *    '   '    *       '    *        '
+    /\  *      '    *   '      '   *
+   /\/\     *        '    *      '
+  /\/\/\     '   *        '      *    '  * 
+ /\/\/\/\   *    '   *    '    *   '   * 
+ |  -_- |      |     |   .   '     *  
+*--|\/|--*     |_____|   |    *     '    *
+   |/\|      * |     |   |    '     * 
+   |  |        |     |   |   *      '     *  
+*/  
+
+/* nain.......... */
+/* section.......................................................................................................................................................1 */
+
+#section-1 {
+    background-color: rgb(247, 248, 255);
+    padding-top: 50px;
+}
+
+.cantainer-section-1 {
+    width: 1140px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+
+.div-left-section-1 {
+    width: 50%;
+    margin: 0px auto;
+}
+
+.div-left-section-1 h6 {
+    font-weight: normal;
+    font-size: 14px;
+    font-weight: 400px;
+    letter-spacing: 2px;
+    margin: 0px;
+
+}
+
+.div-left-section-1 h1 {
+    font-size: 60px;
+    margin: 0px;
+    font-weight: 600;
+}
+
+.div-left-section-1 p {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(119, 119, 119);
+}
+
+.div-left-section-1 a {
+    padding: 15px 30px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    text-decoration: none;
+}
+
+.div-left-section-1 a:hover {
+    box-shadow: 0px 5px 20px #707070;
+}
+
+/* section..................................................................................................................................................2 */
+
+.cantainer-section-2 {
+    display: flex;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 1250px;
+}
+
+.div-right-section-2 h6 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.div-right-section-2 h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.div-right-section-2 p {
+    width: 500px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(150, 150, 150);
+
+}
+
+.div-right-section-2 button {
+    border: none;
+    color: none;
+    background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+}
+
+.div-right-section-2 button:hover {
+    box-shadow: 0px 15px 20px #707070;
+}
+
+.div-right-section-2 button a {
+    color: white;
+    padding: 15px 25px;
+    display: inline-block;
+}
+
+/* section.................................................................................................................................................3 */
+
+#section-3 a {
+    color: black;
+}
+
+#section-3>div {
+    text-align: center;
+    font-size: 25px;
+}
+
+#section-3>div>p {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(150, 150, 150);
+}
+
+#section-3>div:nth-of-type(2) div {
+    width: 400px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+#section-3>div:nth-of-type(2)>div img {
+    width: 50px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+#section-3>div:nth-of-type(2)>div h5 a {
+    font-weight: 650;
+    font-size: 20px;
+}
+
+#section-3>div:nth-of-type(2)>div p {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(150, 150, 150);
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+#section-3>div:nth-of-type(2)>div:hover a {
+    color: #8490ff;
+}
+
+/* section.....................................................................................................................................................4 */
+#section-4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    margin-bottom: 100px;
+}
+
+#section-4>div {
+    text-align: center;
+}
+
+#section-4 span {
+    color: white;
+    font-size: 40px;
+}
+
+.text-section-4 {
+    font-size: 15px !important;
+}
+
+/* section ..............................................................................................................................................................5 */
+
+#section-5 {
+    text-align: center;
+}
+
+.OurLatest {
+
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.Whoare {
+    font-size: 14px;
+    color: rgb(150, 150, 150);
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+
+.toplist {
+    padding: 15px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* .................................................................. */
+
+#section-5 {
+    width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+#section-5>div {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#section-5>div>div span {
+    font-weight: 300;
+    color: rgb(150, 150, 150);
+}
+
+#section-5>div>div:hover .div-hover-section-5 {
+
+    opacity: 0.9;
+    visibility: visible;
+}
+
+#section-5>div>div>.div-hover-section-5 {
+    background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0%;
+
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+#section-5>div>div>div>img {
+    margin-top: 50%;
+}
+
+#section-5>div>div {
+    position: relative;
+    height: 400px;
+}
+
+/* section.......................................................................................................................................................6 */
+
+#section-6 {
+    width: 100%;
+    height: 450px;
+    background-color: #f9f9ff;
+    text-align: center;
+}
+
+#section-6>div:nth-of-type(1) {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.Client {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.Itisvery {
+    font-size: 14px;
+    color: rgb(150, 150, 150);
+    font-weight: 300;
+}
+
+/* ........................................................................ */
+
+
+.divbottom-section-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divbottom-section-6>div {
+    display: inline-block;
+    width: 500px;
+    height: 170px;
+    background-color: white;
+    margin: 20px;
+    position: relative;
+}
+
+.divbottom-section-6 p {
+    color: rgb(150, 150, 150);
+    font-weight: 300;
+    font-size: 14px;
+    margin: 20px 0 10px 100px;
+    text-align: left;
+
+}
+
+.divbottom-section-6 img {
+    width: 50px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.divbottom-section-6>div>div {
+    text-align: left;
+    margin-left: 100px;
+}
+
+.divbottom-section-6>div>div>span:nth-of-type(2) {
+    color: #969696;
+    font-weight: 300;
+}
+
+.divbottom-section-6>div>div:hover>span:nth-of-type(1) {
+    color: #8490ff;
+}
+
+
+/* section...........................................................................................................................................................7 */
+
+#section-7{
+    padding-bottom: 100px;
+
+}
+
+.divtop-section-7 {
+    text-align: center;
+    height: 150px;
+    
+}
+
+.divtop-section-7>h1 {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.divtop-section-7>p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* ..................................................................................... */
+
+
+.divmain-section-7 hr {
+    display: inline-block;
+    width: 230px;
+    margin: 10px 0;
+    border: ridge 1px #e4e4e4;
+}
+
+.divmain-section-7 {
+    text-align: center;
+}
+
+.divmain-section-7>div {
+    width: 250px;
+    height: auto;
+    background-color: #f9f9ff;
+    display: inline-block;
+    position: relative;
+}
+
+.divmain-section-7>div>div:nth-of-type(1) {
+    width: 150px;
+    height: 150px;
+    background-color: #e8e9ff;
+    border-radius: 50%;
+    margin: 10% auto;
+}
+
+
+.divmain-section-7>div>div:nth-of-type(2) {
+    width: 85px;
+    height: 85px;
+    background-color: #f9f9ff;
+    margin: 10% auto;
+    border-radius: 50%;
+    position: absolute;
+    left: 33%;
+    top: 6.5%;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ....h1............................................ */
+.divmain-section-7>div>div:nth-of-type(2)>h1 {
+    font-size: 40px;
+    margin: 15% auto;
+    font-weight: 400;
+}
+
+/* ...h3........................................... */
+
+
+.divmain-section-7>div>h3 {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.divmain-section-7>div>span {
+    color: #969696;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.divmain-section-7>div>span:nth-of-type(5) {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(37, 37, 37);
+}
+
+.divmain-section-7>div>div:nth-of-type(3)>span {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* ............hover...................................................................... */
+
+.divmain-section-7>div:hover {
+    background-color: #8490ff;
+    /* transform: scale(1.1); */
+}
+
+.divmain-section-7>div:hover>div:nth-of-type(1) {
+    background-color: #afb7ff;
+}
+
+.divmain-section-7>div:hover>div:nth-of-type(2) {
+    background-color: #8490ff;
+}
+
+.divmain-section-7>div:hover hr {
+    border: ridge 1px #e4e4e4;
+}
+
+.divmain-section-7>div:hover span {
+    color: white;
+}
+
+.divmain-section-7>div:hover h1 {
+    color: white;
+}
+
+.divmain-section-7>div:hover h3 {
+    color: white;
+}
+
+.divmain-section-7>div:hover div:nth-of-type(3) {
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+.divmain-section-7>div:hover div:nth-of-type(3)>span {
+    color: rgb(31, 31, 31);
+    margin: auto;
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+
+}
+
+.divmain-section-7>div:hover div:nth-of-type(3) span {
+    color: #252525;
+    position: absolute;
+    left: 30%;
+    top: 25%;
+}
+
+
+/* section............................................................................................................................................................8 */
+#section-8{
+    background-color: #f9f9ff;
+
+}
+
+.divtop-section-8 {
+    text-align: center;
+    margin: 10px auto;
+    padding-top: 100px;
+
+
+}
+
+.divtop-section-8>p {
+    font-weight: 300;
+    margin: 10px auto;
+    width: 800px;
+}
+/* .................................... */
+
+.divmain-section-8{
+    display: flex;
+    justify-content: center;
+}
+
+.divmain-section-8>div{
+    width: 360px;
+    margin: 30px;
+}
+
+.divmain-section-8 svg{
+    width: 20px;
+}   
+
+.divmain-section-8>div>div *{
+    vertical-align: middle;
+}
+
+
+.divmain-section-8 span img{
+    width: 20px;
+}
+
+.divmain-section-8 span{
+    color: #969696;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.divmain-section-8>div>div span:nth-of-type(1){
+    color: #252525;
+}
+
+.divmain-section-8>div>div span:nth-of-type(2){
+    margin-left: 98px;
+}
+
+.divmain-section-8>div h1{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.divmain-section-8>div p{
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/* hover    section 8    ............................................................................................................................................... */
+
+.divmain-section-8>div:hover h1{
+    color: #8490ff;
+}
+
+
+/* section...............................................................................................................................................................9 */
+
+#section-9{
+    background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#section-9 img{
+    margin: 60px auto;
+    padding: 0 55px 0 55px;
+    opacity: 0.4;
+}
+
+.canteiner-section-9{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* hover........................................... */
+
+#section-9 img:hover{
+    opacity: 1;
+}
