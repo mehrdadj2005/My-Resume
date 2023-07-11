@@ -1,108 +1,151 @@
 body {
-    padding: 0px;
     margin: 0px;
     background-color: black;
 }
+
 body * {
- font-family: Arial, Helvetica, sans-serif;
- margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 1323px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    font-size: 13px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .list-top-header>ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+header .list-top-header>ul>hr {
+    height: 40px;
+    width: 1px;
+    background-color: grey;
+}
+
+header .list-top-header ul li {
+    position: relative;
 
 }
 
-.div-all {
-    width: 1323px;
-    margin: auto;
-}   
+header .list-top-header>ul>li>a {
+    display: inline-block;
+    color: white;
+    padding: 25px 15px;
+}
+
+header .list-top-header ul li ul hr {
+    margin: 0;
+    width: 228px;
+}
+
+header .list-top-header ul li ul li a {
+    background-color: #15418c;
+    padding: 10px 5px;
+    display: inline-block;
+    width: 220px;
+    color: white;
+}
+
+header .list-top-header ul li ul {
+    display: none;
+    position: absolute;
+    left: -40px;
+    top: 100%;
+}
+
+header .list-top-header ul li ul li {
+    width: 220px;
+}
+
+header .list-top-header>ul li:hover {
+    background-color: #15418c;
+}
+
+header .list-top-header>ul li:hover ul {
+    display: inline-block;
+    z-index: 1;
+}
+
+header .list-top-header li ul a:hover {
+    background-color: #072F54;
+}
+
+header div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .list-bottom-header ul {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0;
+}
+
+header .list-bottom-header ul a {
+    padding: 12px;
+    background-color: #555555;
+    color: white;
+}
+
+header .list-bottom-header ul a:hover {
+    background-color: grey;
+
+}
+
+header .list-bottom-header ul hr {
+    background-color: grey;
+    height: 36px;
+}
+
+.search-header {
+    display: flex;
+    align-items: center;
+}
+
+.search-header input {
+    background-color: #3c3c3c;
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 38px;
+    color: white;
+    padding-left: 5px;
+}
+
+.search-header img {
+    width: 40px;
+    height: 40px;
+}
+
 
 header {
     background-image: url(images/star.jpg);
     width: 100%;
     margin: auto;
     position: relative;
-    /* position: fixed; */
-    /* margin-left: 5%; */
-    /* margin-right: auto; */
-}
-
-.div-header-top {
-    text-align: center;
-    padding-top: 15px;
-
-}
-
-.div-header-top * {
-    text-align: center;
-    color: white;
-    vertical-align: middle;
-    margin-top: 10px;
-}
-
-.div-header-top hr {
-    margin: 0px 10px;
-    display: inline-block;
-    height: 30px;
-    border: 1px solid gray;
-    background-color: gray;
-
-}
-
-.div-search-header {
-    position: absolute;
-    float: right;
-    right: 4%;
-    top: 10%;
-    background-color: rgb(60, 60, 60);
-    border: none;
-}
-
-.input-search {
-    padding: 10px;
-    background-color: rgb(60, 60, 60);
-    color: white;
-    border: none;
-    width: 100px;
-}   
-
-.div-search-header img {
-    width: 40px;
-    vertical-align: middle;
-}
-
-.div-logo-header {
-    padding-top: 50px;
-    display: inline-block;
-    position: relative;
-}
-
-.div-logo-header img {
-    position: absolute;
-    left: 10px;
-    top: -21px;
-}
-
-/* bgf */
-
-.div-header-bottom {
-    text-align: center;
-    border: 1px solid none;
-    background-color: gray;
-    margin: 0px 103px;
-}
-
-.div-header-bottom * {
-    vertical-align: middle;
-}
-
-.div-header-bottom hr {
-    display: inline-block;
-    color: gray;
-    height: 30px;
-    background-color: gray;
-}
-
-.div-header-bottom span {
-    color: white;
-    padding: 0px 7px;
 }
 
 /* main */
@@ -125,13 +168,13 @@ main a p {
 main section {
     position: relative;
     margin-bottom: 10px;
-}
+} 
 
 /* section-1 */
 
-.section-1{
-    /* position: relative; */
-}
+.section-1 {
+position: relative;
+ }
 
 .section-1 * {
     display: inline-block;
@@ -172,7 +215,7 @@ main section {
     background-color: white;
     padding: 7px 10px;
     position: absolute;
-    bottom: 0px;
+    bottom: -16px;
     font-size: 17px;
     font-weight: 600;
 }
@@ -181,27 +224,26 @@ main section {
     background-image: url(images/52424020445_eb4c35203c_k.jpeg);
     width: 320px;
     height: 320px;
-    margin-left: 15px; 
+    margin-left: 15px;
     margin-right: 340px;
 }
 
-.div-2-section-1 p{
+.div-2-section-1 p {
     border: 1px solid white;
     background-color: white;
     font-size: 19px;
     position: absolute;
-    bottom: 0px;
+    bottom: -18px;
     right: 0px;
-    
+
 }
 
 .div-3-section-1 {
     background-color: rgb(68, 171, 255, 0.62);
     width: 320px;
     height: 320px;
-    right: 0px;
-    /* position: relative; */
-}
+    right: 0px; 
+ }
 
 .div-3-section-1 span {
     color: white;
@@ -213,17 +255,17 @@ main section {
     margin-left: 0px;
 }
 
-.div-bottom-div-3-sectiom-1{
+.div-bottom-div-3-sectiom-1 {
     position: absolute;
     bottom: 0px;
     left: 0px;
 }
 
-.div-3-section-1 p{
+.div-3-section-1 p {
     margin: 3px 0px 3px 10px;
-    
+
     width: 320px;
-    
+
 }
 
 
@@ -233,18 +275,15 @@ main section {
     height: 310px;
     margin-top: 327px;
     margin-left: 9px; 
-    /* font-family:none ; */
-    /* position: absolute; */
-    /* left: 660px; */
 }
 
-.div-4-section-1 a{
+.div-4-section-1 a {
     border: 1px solid none;
     background-color: blue;
     padding: 7px;
-} 
+}
 
-.div-4-section-1 p a{
+.div-4-section-1 p a {
     border: 1px solid none;
     background-color: white;
     color: black;
@@ -252,9 +291,14 @@ main section {
     font-size: 17px;
     font-weight: 600;
 }
-.div-div-4-section-1{
+
+.div-div-4-section-1 {
     position: absolute;
     bottom: 0px;
+}
+
+.div-div-4-section-1 p{
+    margin: 0;
 }
 
 .div-1-section-2 {
@@ -263,7 +307,7 @@ main section {
     height: 320px;
 }
 
-.div-1-section-2 p a{
+.div-1-section-2 p a {
     color: black;
     border: 1px solid none;
     padding: 10px;
@@ -282,7 +326,7 @@ main section {
     margin: 0px 17px;
 }
 
-.div-2-section-2 p a{
+.div-2-section-2 p a {
     color: black;
     border: 1px solid none;
     padding: 10px;
@@ -301,7 +345,7 @@ main section {
     height: 320px;
 }
 
-.div-3-section-2 span a{
+.div-3-section-2 span a {
 
     padding: 10px;
     background-color: blue;
@@ -310,7 +354,7 @@ main section {
     bottom: 60px;
 }
 
-.div-3-section-2 p a{
+.div-3-section-2 p a {
     color: black;
     border: 1px solid none;
     padding: 10px;
@@ -321,7 +365,7 @@ main section {
     width: 300px;
     font-size: 17px;
     font-weight: 600;
-    
+
 }
 
 .div-1-section-3 {
@@ -331,7 +375,7 @@ main section {
     margin-right: 10px;
 }
 
-.div-1-section-3 span a{
+.div-1-section-3 span a {
     padding: 10px;
     background-color: blue;
     color: white;
@@ -339,7 +383,7 @@ main section {
     bottom: 60px;
 }
 
-.div-1-section-3 p a{
+.div-1-section-3 p a {
     color: black;
     border: 1px solid none;
     padding: 10px;
@@ -360,14 +404,15 @@ main section {
     position: relative;
 }
 
-.div-2-section-3 span a{
+.div-2-section-3 span a {
     padding: 10px;
     background-color: blue;
     color: white;
     position: absolute;
     bottom: 60px;
 }
-.div-2-section-3 p a{
+
+.div-2-section-3 p a {
     color: black;
     border: 1px solid none;
     padding: 10px;
@@ -377,7 +422,7 @@ main section {
     left: 0px;
     width: 300px;
     font-size: 17px;
-    font-weight: 600;   
+    font-weight: 600;
 }
 
 .div-3-section-3 {
@@ -388,15 +433,15 @@ main section {
     position: relative;
 }
 
-.div-3-section-3 span a{
+.div-3-section-3 span a {
     padding: 10px;
     background-color: blue;
     color: white;
     position: absolute;
-    bottom: 60px;   
+    bottom: 60px;
 }
 
-.div-3-section-3 p a{
+.div-3-section-3 p a {
     color: black;
     border: 1px solid none;
     padding: 10px;
@@ -406,7 +451,7 @@ main section {
     left: 0px;
     width: 300px;
     font-size: 17px;
-    font-weight: 600; 
+    font-weight: 600;
 }
 
 .div-4-section-3 {
@@ -416,15 +461,15 @@ main section {
     position: relative;
 }
 
-.div-4-section-3 span a{
+.div-4-section-3 span a {
     padding: 10px;
     background-color: blue;
     color: white;
     position: absolute;
-    bottom: 55px;   
+    bottom: 55px;
 }
 
-.div-4-section-3 p a{
+.div-4-section-3 p a {
     color: black;
     border: 1px solid none;
     padding: 10px;
@@ -442,36 +487,36 @@ button {
     background-color: rgb(0, 19, 124);
     width: 100%;
     height: 40px;
-}
+} 
 
 /* footer */
 
-footer{
+footer {
     position: relative;
 }
 
-.div-logo-footer{
+.div-logo-footer {
     display: inline-block;
 }
 
-.div-p-footer{
+.div-p-footer {
     display: inline-block;
 }
 
-.div-p-footer p{
+.div-p-footer p {
     color: white;
     position: absolute;
     top: 20px;
 }
 
-.div-links-footer{
-    text-align: right   ;
+.div-links-footer {
+    text-align: right;
     margin-bottom: 50px;
 }
 
-.div-links-footer a{
-    text-decoration: none ;
+.div-links-footer a {
+    text-decoration: none;
     color: blue;
     font-size: 14px;
     padding-left: 15px;
-}
+} 
