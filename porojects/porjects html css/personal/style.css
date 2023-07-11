@@ -1,3 +1,18 @@
+
+/*   
+ *    '   '    *       '    *        '
+    /\  *      '    *   '      '   *
+   /\/\     *        '    *      '
+  /\/\/\     '   *        '      *    '  * 
+ /\/\/\/\   *    '   *    '    *   '   * 
+ |  -_- |      |     |   .   '     *  
+*--|\/|--*     |_____|   |    *     '    *
+   |/\|      * |     |   |    '     * 
+   |  |        |     |   |   *      '     *  
+*/
+/* my name is mehrdad */
+
+
 /* General Style */
 body {
     margin: 0px;
@@ -36,6 +51,7 @@ header {
     left: 0;
     right: 0;
     background-color: white;
+    z-index: 1;
 }
 
 body * {
@@ -50,7 +66,6 @@ li {
 header nav>ul>li {
     display: inline-block;
     padding: 0 10px;
-
 }
 
 .cantainer-header {
@@ -131,19 +146,6 @@ header nav>ul>li>ul>li>ul>li>a {
     display: inline-block;
     width: 100px;
 }
-
-/*   
- *    '   '    *       '    *        '
-    /\  *      '    *   '      '   *
-   /\/\     *        '    *      '
-  /\/\/\     '   *        '      *    '  * 
- /\/\/\/\   *    '   *    '    *   '   * 
- |  -_- |      |     |   .   '     *  
-*--|\/|--*     |_____|   |    *     '    *
-   |/\|      * |     |   |    '     * 
-   |  |        |     |   |   *      '     *  
-*/  
-
 /* nain.......... */
 /* section.......................................................................................................................................................1 */
 
@@ -192,6 +194,7 @@ header nav>ul>li>ul>li>ul>li>a {
     font-weight: 500;
     background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
     text-decoration: none;
+    transition-duration: 0.5s;
 }
 
 .div-left-section-1 a:hover {
@@ -231,6 +234,7 @@ header nav>ul>li>ul>li>ul>li>a {
     border: none;
     color: none;
     background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    transition-duration: 0.5s;
 }
 
 .div-right-section-2 button:hover {
@@ -277,6 +281,7 @@ header nav>ul>li>ul>li>ul>li>a {
 #section-3>div:nth-of-type(2)>div h5 a {
     font-weight: 650;
     font-size: 20px;
+    transition-duration: 0.5s;
 }
 
 #section-3>div:nth-of-type(2)>div p {
@@ -379,6 +384,7 @@ header nav>ul>li>ul>li>ul>li>a {
     opacity: 0;
     visibility: hidden;
 
+    transition-duration: 0.5s;
 }
 
 #section-5>div>div>div>img {
@@ -461,12 +467,13 @@ header nav>ul>li>ul>li>ul>li>a {
 
 .divbottom-section-6>div>div:hover>span:nth-of-type(1) {
     color: #8490ff;
+    transition-duration: 0.2s;
 }
 
 
 /* section...........................................................................................................................................................7 */
 
-#section-7{
+#section-7 {
     padding-bottom: 100px;
 
 }
@@ -474,7 +481,7 @@ header nav>ul>li>ul>li>ul>li>a {
 .divtop-section-7 {
     text-align: center;
     height: 150px;
-    
+
 }
 
 .divtop-section-7>h1 {
@@ -508,6 +515,7 @@ header nav>ul>li>ul>li>ul>li>a {
     background-color: #f9f9ff;
     display: inline-block;
     position: relative;
+    transition-duration: 0.5s;
 }
 
 .divmain-section-7>div>div:nth-of-type(1) {
@@ -568,7 +576,9 @@ header nav>ul>li>ul>li>ul>li>a {
 
 .divmain-section-7>div:hover {
     background-color: #8490ff;
-    /* transform: scale(1.1); */
+    transform: scale(1.1);
+    z-index: 3;
+    margin-top: -90px;
 }
 
 .divmain-section-7>div:hover>div:nth-of-type(1) {
@@ -622,7 +632,7 @@ header nav>ul>li>ul>li>ul>li>a {
 
 
 /* section............................................................................................................................................................8 */
-#section-8{
+#section-8 {
     background-color: #f9f9ff;
 
 }
@@ -640,66 +650,67 @@ header nav>ul>li>ul>li>ul>li>a {
     margin: 10px auto;
     width: 800px;
 }
+
 /* .................................... */
 
-.divmain-section-8{
+.divmain-section-8 {
     display: flex;
     justify-content: center;
 }
 
-.divmain-section-8>div{
+.divmain-section-8>div {
     width: 360px;
     margin: 30px;
 }
 
-.divmain-section-8 svg{
+.divmain-section-8 svg {
     width: 20px;
-}   
+}
 
-.divmain-section-8>div>div *{
+.divmain-section-8>div>div * {
     vertical-align: middle;
 }
 
 
-.divmain-section-8 span img{
+.divmain-section-8 span img {
     width: 20px;
 }
 
-.divmain-section-8 span{
+.divmain-section-8 span {
     color: #969696;
     vertical-align: middle;
     font-size: 14px;
     font-weight: 400;
 }
 
-.divmain-section-8>div>div span:nth-of-type(1){
+.divmain-section-8>div>div span:nth-of-type(1) {
     color: #252525;
 }
 
-.divmain-section-8>div>div span:nth-of-type(2){
+.divmain-section-8>div>div span:nth-of-type(2) {
     margin-left: 98px;
 }
 
-.divmain-section-8>div h1{
+.divmain-section-8>div h1 {
     font-size: 18px;
     margin-top: 20px;
 }
 
-.divmain-section-8>div p{
+.divmain-section-8>div p {
     font-weight: 400;
     margin-top: 10px;
 }
 
 /* hover    section 8    ............................................................................................................................................... */
 
-.divmain-section-8>div:hover h1{
+.divmain-section-8>div:hover h1 {
     color: #8490ff;
 }
 
 
 /* section...............................................................................................................................................................9 */
 
-#section-9{
+#section-9 {
     background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
     width: 100%;
     height: 200px;
@@ -708,13 +719,13 @@ header nav>ul>li>ul>li>ul>li>a {
 }
 
 
-#section-9 img{
+#section-9 img {
     margin: 60px auto;
     padding: 0 55px 0 55px;
     opacity: 0.4;
 }
 
-.canteiner-section-9{
+.canteiner-section-9 {
     width: 1200px;
     margin: 0 auto;
 }
@@ -723,6 +734,6 @@ header nav>ul>li>ul>li>ul>li>a {
 
 /* hover........................................... */
 
-#section-9 img:hover{
+#section-9 img:hover {
     opacity: 1;
 }
