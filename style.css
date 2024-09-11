@@ -1,8 +1,86 @@
-body{
-    margin: 0;
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
 }
 
-header{
-    width: 100%;
-    background-color: blue;
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header .container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myInfo {
+  flex-direction: column;
+  text-align: right;
+}
+
+.flex {
+  display: flex !important;
+  justify-content: space-between;
+}
+
+li {
+  margin: 10px;
+  line-height: 22px;
+}
+
+.table {
+  width: 100%;
+  flex-direction: column;
+}
+
+.table div {
+  text-align: center;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.table span {
+  border: 1px solid #000;
+  width: 100%;
+  padding: 2px;
+}
+
+.blr {
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.btb {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+main p {
+  margin: 0;
+}
+/* ------------------- 1100 ------------------- */
+
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+}
+/* ------------------- 550 ------------------- */
+
+@media screen and (max-width: 550px) {
+  header > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header > div > div:nth-of-type(1) {
+    margin-right: auto;
+  }
+  header > div > div:nth-of-type(2) {
+    margin-left: auto;
+  }
 }
